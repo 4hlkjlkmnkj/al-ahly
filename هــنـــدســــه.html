@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers & Programmers</title>
+    <style>
+        /* تنسيق عام للصفحة */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transition: background 0.5s ease, color 0.5s ease;
+        }
+
+        /* ترويسة الصفحة */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* زر تغيير الوضع */
+        .theme-toggle {
+            margin: 20px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: #2980b9;
+        }
+
+        /* صندوق المقال */
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        /* العناوين داخل المقال */
+        h2 {
+            color: #2c3e50;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 18px;
+            color: #444;
+        }
+
+        /* قائمة المهام */
+        ul {
+            text-align: left;
+            margin: 20px auto;
+            padding: 0;
+            list-style-type: square;
+            max-width: 700px;
+        }
+
+        ul li {
+            font-size: 17px;
+            margin: 10px 0;
+            color: #555;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        ul li:hover {
+            transform: translateX(8px);
+            color: #3498db;
+        }
+
+        /* تأثير التحريك عند تحميل الصفحة */
+        .container.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* الوضع الداكن */
+        body.dark-mode {
+            background-color: #181818;
+            color: #eee;
+        }
+
+        body.dark-mode .container {
+            background: #252525;
+            color: white;
+        }
+
+        body.dark-mode h2 {
+            color: #f1c40f;
+        }
+
+        body.dark-mode .theme-toggle {
+            background: #f39c12;
+        }
+
+        body.dark-mode .theme-toggle:hover {
+            background: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Developers & Programmers</header>
+
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode 🌙</button>
+
+    <div class="container" id="articleContainer">
+        <h2>Who are Developers & Programmers?</h2>
+        <p>
+            Developers, also known as software engineers or programmers, are professionals who write, test,
+            and maintain code for software and applications. They use programming languages like 
+            <b>Python, Java, C++, JavaScript, and SQL</b> to create digital solutions.
+        </p>
+
+        <h2>Where Do Programmers Work?</h2>
+        <p>
+            Programmers work in various fields, including <b>web development, mobile apps, artificial intelligence, 
+            game development, and data analysis</b>. They collaborate with designers, analysts, and project managers
+            to ensure high-quality software.
+        </p>
+
+        <h2>Key Responsibilities</h2>
+        <ul>
+            <li>Writing clean and efficient code.</li>
+            <li>Debugging and testing software to ensure reliability.</li>
+            <li>Collaborating with teams and stakeholders.</li>
+            <li>Updating and maintaining existing software.</li>
+        </ul>
+
+        <h2>What Makes a Good Programmer?</h2>
+        <p>
+            In addition to technical skills, programmers need <b>critical thinking, creativity, and a passion for learning</b>.
+            They contribute significantly to modern innovation and digital transformation.
+        </p>
+    </div>
+
+    <script>
+        // تأثير ظهور المقال عند تحميل الصفحة
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("articleContainer").classList.add("show");
+        });
+
+        // تبديل الوضع الداكن والفاتح
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأهلي نادي القرن 🏆</title>
+    <style>
+        /* تنسيق الصفحة */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transition: background 0.5s ease, color 0.5s ease;
+        }
+
+        /* ترويسة المقال */
+        header {
+            background-color: #d50000;
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* زر تغيير الوضع */
+        .theme-toggle {
+            margin: 20px;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: #555;
+        }
+
+        /* المحتوى */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease, transform 1s ease;
+            text-align: justify;
+        }
+
+        h2 {
+            color: #d50000;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 18px;
+            color: #444;
+        }
+
+        /* جدول الإنجازات */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #d50000;
+            color: white;
+        }
+
+        /* الوضع الداكن */
+        body.dark-mode {
+            background-color: #181818;
+            color: #eee;
+        }
+
+        body.dark-mode .container {
+            background: #252525;
+            color: white;
+        }
+
+        body.dark-mode h2 {
+            color: #f1c40f;
+        }
+
+        body.dark-mode .theme-toggle {
+            background: #f39c12;
+        }
+
+        body.dark-mode .theme-toggle:hover {
+            background: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+    <header>الأهلي نادي القرن الأفريقي 🏆</header>
+
+    <button class="theme-toggle" onclick="toggleTheme()">تغيير الوضع 🌙</button>
+
+    <div class="container" id="articleContainer">
+        
+        <h2>مقدمة عن النادي الأهلي</h2>
+        <p>
+            النادي الأهلي المصري هو أكثر أندية أفريقيا تتويجًا بالبطولات، حيث حصل على العديد من الألقاب المحلية والقارية منذ تأسيسه في عام 1907. 
+            يُلقب بـ "نادي القرن" نظرًا لإنجازاته العظيمة في مختلف المسابقات.
+        </p>
+
+        <h2>أبرز اللاعبين من 2000 إلى 2025</h2>
+        <p>على مدار السنوات، ضم الأهلي العديد من اللاعبين الأسطوريين الذين تركوا بصمة واضحة في تاريخ النادي.</p>
+        <ul>
+            <li>محمد أبو تريكة ⭐ (2004 - 2013)</li>
+            <li>وائل جمعة 🛡️ (2001 - 2014)</li>
+            <li>حسام غالي 🏆 (2000 - 2003, 2010 - 2018)</li>
+            <li>عماد متعب ⚽ (2003 - 2018)</li>
+            <li>حسام عاشور 🏅 (2003 - 2020)</li>
+            <li>عبد الله السعيد 🏹 (2011 - 2018)</li>
+            <li>مؤمن زكريا 🦅 (2015 - 2020)</li>
+            <li>علي معلول 🇹🇳 (2016 - حتى الآن)</li>
+            <li>محمد الشناوي 🧤 (2016 - حتى الآن)</li>
+            <li>حسين الشحات ⚡ (2019 - حتى الآن)</li>
+        </ul>
+
+        <h2>أهم الإنجازات</h2>
+        <table>
+            <tr>
+                <th>البطولة</th>
+                <th>عدد الألقاب</th>
+            </tr>
+            <tr>
+                <td>الدوري المصري</td>
+                <td>42 مرة</td>
+            </tr>
+            <tr>
+                <td>دوري أبطال إفريقيا</td>
+                <td>11 مرة</td>
+            </tr>
+            <tr>
+                <td>كأس السوبر الإفريقي</td>
+                <td>8 مرات</td>
+            </tr>
+            <tr>
+                <td>كأس مصر</td>
+                <td>38 مرة</td>
+            </tr>
+            <tr>
+                <td>المشاركة في كأس العالم للأندية</td>
+                <td>9 مرات (أفضل مركز: الثالث)</td>
+            </tr>
+        </table>
+
+        <h2>أشهر المباريات التاريخية</h2>
+        <p>
+            على مدار تاريخه، خاض الأهلي العديد من المباريات التي لا تُنسى، مثل:
+            <ul>
+                <li>فوزه على الزمالك 6-1 عام 2002 في الدوري المصري.</li>
+                <li>الفوز على الصفاقسي التونسي في نهائي دوري أبطال إفريقيا 2006 بهدف أبو تريكة القاتل.</li>
+                <li>الفوز على الرجاء المغربي 3-0 في كأس السوبر الإفريقي 2021.</li>
+                <li>التغلب على الزمالك 2-1 في نهائي القرن بدوري أبطال إفريقيا 2020.</li>
+                <li>تحقيق المركز الثالث في كأس العالم للأندية 2020 بعد الفوز على بالميراس البرازيلي بركلات الترجيح.</li>
+            </ul>
+        </p>
+
+    </div>
+
+    <script>
+        // تأثير ظهور المقال عند تحميل الصفحة
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("articleContainer").classList.add("show");
+        });
+
+        // تبديل الوضع الداكن والفاتح
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+</html>
